@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    .img-container {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<body>
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="green.jpg" alt="green" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="mirror.webp" alt="mirror" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="download (1).jpg" alt="download" style="width: 100%;">
+        </div>
+    </div>
+</body>
+
+</html>
